@@ -1,0 +1,458 @@
+/* Reset CSS */
+*{
+   
+}
+body, h1, h2, p, ul, li, div, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    /* background-image: url("../images/background2.JPG"); */
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* color: #27AE60; */
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+#principalTitle {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.topnav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .topnav_link {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .topnav_link:hover {
+    color: #0078b4;
+  }
+  
+  /* cacher le menu responsive */
+  #topnav_hamburger_icon,
+  #topnav_responsive_menu {
+    display: none;
+  }
+
+img {
+    width: 100%;
+}
+
+
+
+/* Section Accueil */
+#accueil {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#welcome {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* CAROUSEL */
+* {box-sizing:border-box}
+
+/* Carrousel containeur */
+.slideshow-container {
+    width: 40vw;
+    height: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Images invisibles par default*/
+.Containers {
+  display: none;
+}
+
+/* bouttons suivant et précédent*/
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 3s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Placement des bouttons suivant et précédent*/
+.forward {
+  right: 10px;
+  border-radius: 4px 0 0 4px;
+}
+.Back{
+    left: 0;
+}
+
+/*opacité au survol de la souris */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Info légende */
+.info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Contenu */
+.info {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* Bulles d'indication */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 1;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+
+.Containers img {
+    width: 100%;
+    height: 50vh;
+}
+
+/* Section A propos */
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#imagesPropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about_image {
+    width: 40%;
+    height: 25em;
+    border-radius: 8px;
+    border: solid green 2px;
+    min-width: 150px;
+    object-fit: cover;
+}
+#descriptAbout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+    color: grey;
+}
+#descriptAbout_1, #descriptAbout_2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin: 20px;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+.marginRight:hover {
+    background-color: rgb(32, 24, 24);
+}
+.marginRight{
+  width: 50%;
+  padding: 30px;
+  max-width: 700px;
+}
+
+#descriptAbout h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #27AE60;
+}
+
+.descriptAbout p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Section Services */
+#services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#naturel,
+#appareils {
+    margin-bottom: 40px;
+}
+#naturel h1, #appareils h1{
+    margin-bottom: 20px;
+}
+#firstLine, #secondLine{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* width: 30vw; */
+    height: 25em;
+    overflow: auto;
+    /* min-width: 230px; */
+}
+
+.service img {
+    width: 100%;
+    /* height: 80%; */
+    /* height: auto; */
+    border-radius: 8px;
+    object-fit: cover;
+}
+#appareils_section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: rgb(212, 193, 193);
+    display: none;
+}
+
+.open-modal {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Section Prix */
+#price {
+    padding: 50px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+#title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#title hr{
+    width: 40vw;
+    height: 2px;
+    border: solid black  1px;
+}
+.price_service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+}
+.price_service p {
+    margin-left: 10px;
+}
+#theraface_price hr{
+    width: 53vw;
+}
+#fauteil_massant_price hr{
+    width: 43vw;
+}
+#massage_californien_price hr{
+    width: 50vw;
+}
+#massage_suedois_price hr{
+    width: 52vw;
+}
+#cupping_therapie_price1 hr{
+    width: 44vw;
+}
+#cupping_therapie_price2 hr{
+    width: 50vw;
+}
+#cryotherapie_price hr{
+    width: 54vw;
+}
+#electrode_compex_price hr{
+    width: 51vw;
+}
+
+#second_part_hr {
+    margin-top: 40px;
+    border: solid 1px;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+#competition {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.competition_type {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#league1, #championsLeague, #worldCup{
+  width: 15vw;
+  margin-bottom: 1em;
+}
+
+.bg {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #27AE60;
+    font-size: 15px;
+    background-color: #f4f4f4;
+}
+.bg p{
+    margin-bottom: 10px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #27AE60;
+}
+
+.contact_composant {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_composant img {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+#contact a {
+    color: black;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+}
+
+
+
+
+
